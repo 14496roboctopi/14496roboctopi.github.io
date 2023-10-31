@@ -1,0 +1,150 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>CuttlefishFTCBridge</title>
+<link href="../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../scripts/sourceset_dependencies.js" async></script>
+<link href="../styles/style.css" rel="Stylesheet">
+<link href="../styles/main.css" rel="Stylesheet">
+<link href="../styles/prism.css" rel="Stylesheet">
+<link href="../styles/logo-styles.css" rel="Stylesheet">
+<link href="../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../scripts/main.js" defer></script>
+<script type="text/javascript" src="../scripts/prism.js" async></script>
+<script type="text/javascript" src="../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../index.html">
+                            Cuttlefish Documentation
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":CuttlefishFTCBridge:dokkaHtmlPartial/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" id="content" pageids="CuttlefishFTCBridge::////PointingToDeclaration//2098094570">
+  <div class="breadcrumbs"></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Cuttlefish</span><wbr><span><span>FTCBridge</span></span></h1>
+    <div class="platform-hinted UnderCoverText" data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><h3 class=""> Overview</h3><p class="paragraph">Throughout our FTC journey, we have noticed certain shortcomings in the stock rev robotics device system. First, the config system can be extremely inconvenient to use as the config must be changed in the app and cannot be adjusted directly in code, in addition to several other issues. Next, there are often performance issues when using lots of sensors as each one has to poll the hub individually. Finally, there is a lot of functionality available through the LynxCommand API that is not exposed by the built-in device classes that can be extremely useful. In order to combat these issues, we have created our own device system as an alternative to the stock device system that accesses features directly through LynxCommands. This replaces classes like <code class="lang-kotlin">DcMotor</code> with custom classes like <code class="lang-kotlin">CuttleMotor</code>.</p><p class="paragraph">This allows devices to be retrieved directly by port number rather than config name, allows sensors to automatically use bulk data instead of direct polling increasing loop performance, and exposes much of the extended functionality not available in the stock device system.</p><p class="paragraph">This library also acts as a bridge between the main Cuttlefish library and the FTC SDK as all of the devices implement the Cuttlefish device interfaces.</p><h2 class=""> Installation</h2><h3 class=""> Basic</h3><p class="paragraph">Open build.dependencies.gradle and add the following line to the dependecies sections</p><div class="sample-container"><pre><code class="block lang-groovy" theme="idea">implementation 'com.roboctopi:CuttlefishFTCBridge:1.0.0'</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h3 class=""> Advanced</h3><p class="paragraph">Here is how to add CuttlefishFTCBridge to your project directly as a repository. This is useful if you are planning to modify the library yourself</p><p class="paragraph">Clone CuttlefishFTCBridge into the top-level folder of your project. This can be done with the following command in git bash:</p><div class="sample-container"><pre><code class="block lang-bash" theme="idea">git clone https://github.com/14496roboctopi/CuttlefishFTCBridge</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">If you have forked the library then you can use the URL to your library instead. Note: Copy and pasting into the Windows git bash is sometimes buggy, meaning that if you copy and paste this into the Windows git bash it might throw an error if you don't retype certain parts of it.</p><p class="paragraph">Another option instead of cloning the library directly is to add it as a submodule. This is useful if you are using git for your project as it tells git to retrieve the project from a separate repository rather than including it in your main repository. It can be added as a submodule using the following command:</p><div class="sample-container"><pre><code class="block lang-bash" theme="idea">git submodule add https://github.com/14496roboctopi/CuttlefishFTCBridge</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">DO NOT RUN THIS COMMAND IN ADDITION TO THE FIRST COMMAND.  If you choose to go with this option then you will need to push and pull the submodule separately from the rest of your git. You will also need to run the commands git submodule init and git submodule update whenever you set up a new copy of the repo on a different computer in order to pull the submodule into your project.</p><p class="paragraph">Next, look for your project-level build.gradle file. It can be found under gradle scripts and should say (Project: the_name_of_your_project) in parentheses after build.gradle. In this file in the dependencies block, add the following line:</p><div class="sample-container"><pre><code class="block lang-groovy" theme="idea">classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.10'</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">This tells Gradle to include the Kotlin plugin in your project.</p><p class="paragraph">Now open settings.gradle, which can also be found under gradle scripts, and add the following line:</p><div class="sample-container"><pre><code class="block lang-groovy" theme="idea">include ':CuttlefishFTCBridge'</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">This tells Gradle that the CuttlefishFTCBridge folder is a module in your project.</p><p class="paragraph">Finally, locate the TeamCode build.gradle file. This is the build.gradle file that says (Moduke: TeamCode) in parentheses. In the dependencies block of this file, add the following line:</p><div class="sample-container"><pre><code class="block lang-groovy" theme="idea">implementation project(path: ':CuttlefishFTCBridge')</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">This adds CuttlefishFTCBridge as a dependency of your teamcode module, allowing it to be used in teamcode. After making changes to the Gradle scripts, you click <code class="lang-kotlin">sync now</code> in the top right of your code window.</p><h3 class=""> CuttleRevHub</h3><p class="paragraph">The basis of the Cuttlefish device system is the CuttleRevHub object. It is an object that provides all extended functionality having to do with the rev hub (expansion or control), such as adjusting LED color and measuring battery voltage, and it is used to obtain other devices, such as motors and servos. If you are using two hubs they will both have to be obtained separately. The hubs can be obtained as follows:</p><div class="sample-container"><pre><code class="block lang-java" theme="idea">CuttleRevHub controlHub = new CuttleRevHub(hardwareMap,CuttleRevHub.HubTypes.CONTROL_HUB);<br>CuttleRevHub expansionHub = new CuttleRevHub(hardwareMap,CuttleRevHub.HubTypes.EXPANSION_HUB);</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">If that doesn't work, you can also obtain hubs directly by name. The name of each hub can be found in the robot config file. Here is an example of retrieving a hub by name:</p><div class="sample-container"><pre><code class="block lang-java" theme="idea">CuttleRevHub exHub = new CuttleRevHub(hardwareMap,"Expansion Hub 2");</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Make sure to define the hub in init, as when the constructor is called it will get the control hub using hardwareMap. A detailed description of available features can be found in the Cuttlefish <a href="/CuttlefishFTCBridge/com.roboctopi.cuttlefishftcbridge.devices/-cuttle-rev-hub/index.html">reference documentation</a>. </p><h3 class=""> Obtaining Devices</h3><p class="paragraph">Once a CuttleRevHub has been obtained it can be used to obtain devices. This can be done simply as follows:</p><div class="sample-container"><pre><code class="block lang-java" theme="idea">CuttleMotor motor = controlHub.getMotor(1 /*Motor Port Number*/ );<br>CuttleEncoder encoder = hub.getEncoder(3 /*Encoder Motor Port Number*/, 512 /*Counter Per Revolution*/ );<br>CuttleServo servo = hub.getServo(2 /*Servo Port Number*/) ;<br>CuttleAnalog analog_sensor = hub.getAnalog(2 /*Analog Port Number*/ );<br>CuttleDigital digital_sensor = hub.getDigital(3 /*Digital Port Number*/ );</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph"><i><strong>If you are using any sensors obtained from the hub, you must call the pullBulkData function of the hub every loop cycle in order for the sensors to function.</strong></i> This is because the sensors automatically use cached bulk data from the hub, meaning you must tell the hub to get new bulk data each cycle, or the devices won't update. These devices can be used like their stock counterparts. For a detailed description of their functionality, see their <a href="/CuttlefishFTCBridge/com.roboctopi.cuttlefishftcbridge.devices/index.html">reference documentation</a>.</p><p class="paragraph"></p><h2 id="initialized-opmode">Initialized OpMode</h2><p></p><p class="paragraph">The purpose of the built-in device config is to allow you to change the port that a device is plugged into without having to update every opmode that uses that device. This is desirable as manually changing every opmode every time you change hardware is bad. Since this library negates the built-in config system, it is a good idea to put something else in place to allow for devices to be initialized the same across all opmodes. There are different ways that you can do this, but we recommend creating an "initialized opmode". This is an abstract class that initializes everything on your robot that you can extend instead of extending the default <code class="lang-kotlin">OpMode</code> or <code class="lang-kotlin">LinearOpMode</code> classes. This can be created in the same manner as a normal opmode would be created, except that <code class="lang-kotlin">@TeleOp</code> or <code class="lang-kotlin">@Autonomous</code> is omitted, and that it is declared as an abstract class instead of a normal class. We also recommend that in your initialized opmode, you extend <code class="lang-kotlin">GamepadOpmode</code> or <code class="lang-kotlin">CuttlefishOpMode</code>, which are similar to the default iterative opmode except that it internally uses its own while loop as we have noticed intermittent performance problems in the iterative opmode loop. <code class="lang-kotlin">GamepadOpMode</code> has built-in functions that are called when buttons on the gamepad are pressed or released, which is useful for TeleOp programming. Here is a basic example of an Initialized OpMode:</p><div class="sample-container"><pre><code class="block lang-java" theme="idea">public abstract class InitializedOpmode extends GamepadOpMode {<br>    public CuttleRevHub ctrlHub;<br>    public CuttleRevHub expHub;<br><br>    public CuttleMotor leftFrontMotor ;<br>    public CuttleMotor rightFrontMotor;<br>    public CuttleMotor rightBackMotor ;<br>    public CuttleMotor leftBackMotor  ;<br>    MecanumController chassis;<br><br>    @Override<br>    public void onInit(){<br>        //Runs when the OpMode is initialized<br>        ctrlHub = new CuttleRevHub(hardwareMap,CuttleRevHub.HubTypes.CONTROL_HUB);<br>        expHub = new CuttleRevHub(hardwareMap,"Expansion Hub 2");<br><br>        leftFrontMotor  = ctrlHub.getMotor(3);<br>        rightFrontMotor = ctrlHub.getMotor(2);<br>        rightBackMotor  = expHub.getMotor(2);<br>        leftBackMotor   = expHub.getMotor(3);<br><br>        leftBackMotor.setDirection(Direction.REVERSE);<br>        leftFrontMotor.setDirection(Direction.REVERSE);<br>        chassis = new MecanumController(rightFrontMotor,rightBackMotor,leftFrontMotor,leftBackMotor);<br>    }<br>    @Override<br>    public void main() {<br>        //Runs when the OpMode is started<br>    }<br>    public void mainLoop()<br>    {<br>        //Runs repeatedly after the OpMode is started<br>        ctrlHub.pullBulkData();<br>        expHub.pullBulkData();<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Here is how you would create a basic driver opmode using that initialized opmode:</p><div class="sample-container"><pre><code class="block lang-java" theme="idea">@TeleOp(name="Driver Opmode", group="Example")<br>public abstract class DriverOpMode extends InitializedOpmode {<br>    @Override<br>    public void onInit()<br>    {<br>        super.onInit();<br>        // Put OpMode specific init code here<br>    }<br><br>    @Override<br>    public void main() {<br>        super.main();<br>        // Put OpMode specific main code here<br>    }<br><br>    public void mainLoop(){<br>        super.mainLoop();<br>        chassis.setVec(new Pose(gamepad1.left_stick_x,-gamepad1.left_stick_y,-gamepad1.right_stick_x));<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">If you don't have any opmode specific init or main code, those functions can be ommited:</p><div class="sample-container"><pre><code class="block lang-java" theme="idea">@TeleOp(name="Driver Opmode", group="Example")<br>public abstract class DriverOpMode extends InitializedOpmode {<br>    public void mainLoop(){<br>        super.mainLoop();<br>        chassis.setVec(new Pose(gamepad1.left_stick_x,-gamepad1.left_stick_y,-gamepad1.right_stick_x));<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph"><i><strong>Make sure to run super.{insert function name here}() at the top of the onInit, main, and mainLoop functions in opmodes implementing your Initialized Opmode</strong></i>. If you don't do this the code from your initialized opmode will not be executed.</p></div></div>
+  </div>
+  <h2 class="">Packages</h2>
+  <div class="table"><a data-name="397785726%2FPackages%2F2098094570" anchor-label="com.roboctopi.cuttlefishftcbridge.devices" id="397785726%2FPackages%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+    <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.roboctopi.cuttlefishftcbridge.devices/index.html">com.roboctopi.cuttlefishftcbridge.devices</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="397785726%2FPackages%2F2098094570"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1157895178%2FPackages%2F2098094570" anchor-label="com.roboctopi.cuttlefishftcbridge.opmodeTypes" id="-1157895178%2FPackages%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+    <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.roboctopi.cuttlefishftcbridge.opmodeTypes/index.html">com.roboctopi.cuttlefishftcbridge.opmodeTypes</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1157895178%2FPackages%2F2098094570"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-860466769%2FPackages%2F2098094570" anchor-label="com.roboctopi.cuttlefishftcbridge.tasks" id="-860466769%2FPackages%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+    <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.roboctopi.cuttlefishftcbridge.tasks/index.html">com.roboctopi.cuttlefishftcbridge.tasks</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-860466769%2FPackages%2F2098094570"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1109520658%2FPackages%2F2098094570" anchor-label="com.roboctopi.cuttlefishftcbridge.utils" id="1109520658%2FPackages%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+    <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.roboctopi.cuttlefishftcbridge.utils/index.html">com.roboctopi.cuttlefishftcbridge.utils</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1109520658%2FPackages%2F2098094570"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,14 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:Cuttlefish
+com.roboctopi.cuttlefish.components
+com.roboctopi.cuttlefish.controller
+com.roboctopi.cuttlefish.localizer
+com.roboctopi.cuttlefish.queue
+com.roboctopi.cuttlefish.utils
+module:CuttlefishFTCBridge
+com.roboctopi.cuttlefishftcbridge.devices
+com.roboctopi.cuttlefishftcbridge.opmodeTypes
+com.roboctopi.cuttlefishftcbridge.tasks
+com.roboctopi.cuttlefishftcbridge.utils

@@ -1,0 +1,243 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>TaskQueue</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            Cuttlefish Documentation
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":cuttlefish:dokkaHtmlPartial/main">Cuttlefish</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="Cuttlefish::com.roboctopi.cuttlefish.queue/TaskQueue///PointingToDeclaration//-1477358253">
+  <div class="breadcrumbs"><a href="../../index.html">Cuttlefish</a><span class="delimiter">/</span><a href="../index.html">com.roboctopi.cuttlefish.queue</a><span class="delimiter">/</span><span class="current">TaskQueue</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Task</span><wbr><span><span>Queue</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">TaskQueue</a></div><p class="paragraph">The Task Queue is a scheduling system. It is a Queue to which Tasks can be added. A task is simply an object which contains a loop function which returns a boolean. The loop function of the task at the front of the queue will be executed every update cycle until it returns true. Once the task loop function returns true the task is discarded from the queue and the next task begins executing. By using ForkTasks and TaskLists it is possible to create arbitrarily complex trees of tasks. Loops of tasks can be implementing via recursion using a TaskList and CustomTask.</p><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-task/index.html"><span><span>Task</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-task-list/index.html"><span>Task</span><wbr><span><span>List</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-fork-task/index.html"><span>Fork</span><wbr><span><span>Task</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-custom-task/index.html"><span>Custom</span><wbr><span><span>Task</span></span></a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1440898831%2FConstructors%2F-1477358253" anchor-label="TaskQueue" id="1440898831%2FConstructors%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-task-queue.html"><span>Task</span><wbr><span><span>Queue</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1440898831%2FConstructors%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="317426385%2FProperties%2F-1477358253" anchor-label="paused" id="317426385%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="paused.html"><span><span>paused</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="317426385%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="paused.html">paused</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-951392550%2FProperties%2F-1477358253" anchor-label="task" id="-951392550%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="task.html"><span><span>task</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-951392550%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="task.html">task</a><span class="token operator">: </span><a href="../-task/index.html">Task</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2137856813%2FProperties%2F-1477358253" anchor-label="tasks" id="2137856813%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="tasks.html"><span><span>tasks</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2137856813%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="tasks.html">tasks</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html">LinkedList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-task/index.html">Task</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-594701458%2FFunctions%2F-1477358253" anchor-label="addTask" id="-594701458%2FFunctions%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-task.html"><span>add</span><wbr><span><span>Task</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-594701458%2FFunctions%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-task.html"><span class="token function">addTask</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">taskToAdd<span class="token operator">: </span><a href="../-task/index.html">Task</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Add a task to the queue</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-806214322%2FFunctions%2F-1477358253" anchor-label="clear" id="-806214322%2FFunctions%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="clear.html"><span><span>clear</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-806214322%2FFunctions%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="clear.html"><span class="token function">clear</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Remove all tasks from the queue</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="702456433%2FFunctions%2F-1477358253" anchor-label="getIdle" id="702456433%2FFunctions%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-idle.html"><span>get</span><wbr><span><span>Idle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="702456433%2FFunctions%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-idle.html"><span class="token function">getIdle</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Check if there are currently tasks in the queue</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="251819461%2FFunctions%2F-1477358253" anchor-label="pause" id="251819461%2FFunctions%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pause.html"><span><span>pause</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="251819461%2FFunctions%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="pause.html"><span class="token function">pause</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Temporarily halt the execution of the queue</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-996877538%2FFunctions%2F-1477358253" anchor-label="unpause" id="-996877538%2FFunctions%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unpause.html"><span><span>unpause</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-996877538%2FFunctions%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="unpause.html"><span class="token function">unpause</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Resume execution of the queue</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="908992406%2FFunctions%2F-1477358253" anchor-label="update" id="908992406%2FFunctions%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update.html"><span><span>update</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="908992406%2FFunctions%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="update.html"><span class="token function">update</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Execute the loop function of the current task and discard it if it is complete</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,693 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>CuttlefishOpMode</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            Cuttlefish Documentation
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":CuttlefishFTCBridge:dokkaHtmlPartial/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="CuttlefishFTCBridge::com.roboctopi.cuttlefishftcbridge.opmodeTypes/CuttlefishOpMode///PointingToDeclaration//2098094570">
+  <div class="breadcrumbs"><a href="../../index.html">CuttlefishFTCBridge</a><span class="delimiter">/</span><a href="../index.html">com.roboctopi.cuttlefishftcbridge.opmodeTypes</a><span class="delimiter">/</span><span class="current">CuttlefishOpMode</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Cuttlefish</span><wbr><span>Op</span><wbr><span><span>Mode</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">CuttlefishOpMode</a> : <span data-unresolved-link="com.qualcomm.robotcore.eventloop.opmode/LinearOpMode///PointingToDeclaration/">LinearOpMode</span></div><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-gamepad-op-mode/index.html">GamepadOpMode</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-2110407575%2FConstructors%2F2098094570" anchor-label="CuttlefishOpMode" id="-2110407575%2FConstructors%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-cuttlefish-op-mode.html"><span>Cuttlefish</span><wbr><span>Op</span><wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2110407575%2FConstructors%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1488514342%2FProperties%2F2098094570" anchor-label="frameDelay" id="-1488514342%2FProperties%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="frame-delay.html"><span>frame</span><wbr><span><span>Delay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1488514342%2FProperties%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="frame-delay.html">frameDelay</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1533398127%2FProperties%2F2098094570" anchor-label="gamepad1" id="1533398127%2FProperties%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#1533398127%2FProperties%2F2098094570"><span><span>gamepad1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1533398127%2FProperties%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="../-gamepad-op-mode/index.html#1533398127%2FProperties%2F2098094570">gamepad1</a><span class="token operator">: </span><span data-unresolved-link="com.qualcomm.robotcore.hardware/Gamepad///PointingToDeclaration/">Gamepad</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1564417934%2FProperties%2F2098094570" anchor-label="gamepad2" id="1564417934%2FProperties%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#1564417934%2FProperties%2F2098094570"><span><span>gamepad2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1564417934%2FProperties%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="../-gamepad-op-mode/index.html#1564417934%2FProperties%2F2098094570">gamepad2</a><span class="token operator">: </span><span data-unresolved-link="com.qualcomm.robotcore.hardware/Gamepad///PointingToDeclaration/">Gamepad</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1397214969%2FProperties%2F2098094570" anchor-label="hardwareMap" id="-1397214969%2FProperties%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#-1397214969%2FProperties%2F2098094570"><span>hardware</span><wbr><span><span>Map</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1397214969%2FProperties%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="../-gamepad-op-mode/index.html#-1397214969%2FProperties%2F2098094570">hardwareMap</a><span class="token operator">: </span><span data-unresolved-link="com.qualcomm.robotcore.hardware/HardwareMap///PointingToDeclaration/">HardwareMap</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1892877380%2FProperties%2F2098094570" anchor-label="isStarted" id="1892877380%2FProperties%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#1892877380%2FProperties%2F2098094570"><span>is</span><wbr><span><span>Started</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1892877380%2FProperties%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-gamepad-op-mode/index.html#1892877380%2FProperties%2F2098094570">isStarted</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-681153211%2FProperties%2F2098094570" anchor-label="MS_BEFORE_FORCE_STOP_AFTER_STOP_REQUESTED" id="-681153211%2FProperties%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#-681153211%2FProperties%2F2098094570"><span><span>MS_BEFORE_FORCE_STOP_AFTER_STOP_REQUESTED</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-681153211%2FProperties%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-gamepad-op-mode/index.html#-681153211%2FProperties%2F2098094570">MS_BEFORE_FORCE_STOP_AFTER_STOP_REQUESTED</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">900</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1483349743%2FProperties%2F2098094570" anchor-label="msStuckDetectInit" id="1483349743%2FProperties%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#1483349743%2FProperties%2F2098094570"><span>ms</span><wbr><span>Stuck</span><wbr><span>Detect</span><wbr><span><span>Init</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1483349743%2FProperties%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="../-gamepad-op-mode/index.html#1483349743%2FProperties%2F2098094570">msStuckDetectInit</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-553001045%2FProperties%2F2098094570" anchor-label="msStuckDetectInitLoop" id="-553001045%2FProperties%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#-553001045%2FProperties%2F2098094570"><span>ms</span><wbr><span>Stuck</span><wbr><span>Detect</span><wbr><span>Init</span><wbr><span><span>Loop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-553001045%2FProperties%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="../-gamepad-op-mode/index.html#-553001045%2FProperties%2F2098094570">msStuckDetectInitLoop</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="363588571%2FProperties%2F2098094570" anchor-label="msStuckDetectLoop" id="363588571%2FProperties%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#363588571%2FProperties%2F2098094570"><span>ms</span><wbr><span>Stuck</span><wbr><span>Detect</span><wbr><span><span>Loop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="363588571%2FProperties%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="../-gamepad-op-mode/index.html#363588571%2FProperties%2F2098094570">msStuckDetectLoop</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="427944857%2FProperties%2F2098094570" anchor-label="msStuckDetectStart" id="427944857%2FProperties%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#427944857%2FProperties%2F2098094570"><span>ms</span><wbr><span>Stuck</span><wbr><span>Detect</span><wbr><span><span>Start</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="427944857%2FProperties%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="../-gamepad-op-mode/index.html#427944857%2FProperties%2F2098094570">msStuckDetectStart</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-409341632%2FProperties%2F2098094570" anchor-label="msStuckDetectStop" id="-409341632%2FProperties%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#-409341632%2FProperties%2F2098094570"><span>ms</span><wbr><span>Stuck</span><wbr><span>Detect</span><wbr><span><span>Stop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-409341632%2FProperties%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="../-gamepad-op-mode/index.html#-409341632%2FProperties%2F2098094570">msStuckDetectStop</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-247800494%2FProperties%2F2098094570" anchor-label="runtime" id="-247800494%2FProperties%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="runtime.html"><span><span>runtime</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-247800494%2FProperties%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="runtime.html">runtime</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1097975490%2FProperties%2F2098094570" anchor-label="telemetry" id="1097975490%2FProperties%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#1097975490%2FProperties%2F2098094570"><span><span>telemetry</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1097975490%2FProperties%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="../-gamepad-op-mode/index.html#1097975490%2FProperties%2F2098094570">telemetry</a><span class="token operator">: </span><span data-unresolved-link="org.firstinspires.ftc.robotcore.external/Telemetry///PointingToDeclaration/">Telemetry</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-591827947%2FProperties%2F2098094570" anchor-label="time" id="-591827947%2FProperties%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#-591827947%2FProperties%2F2098094570"><span><span>time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-591827947%2FProperties%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="../-gamepad-op-mode/index.html#-591827947%2FProperties%2F2098094570">time</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="503260448%2FFunctions%2F2098094570" anchor-label="getRuntime" id="503260448%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#503260448%2FFunctions%2F2098094570"><span>get</span><wbr><span><span>Runtime</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="503260448%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-gamepad-op-mode/index.html#503260448%2FFunctions%2F2098094570"><span class="token function">getRuntime</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-945285709%2FFunctions%2F2098094570" anchor-label="idle" id="-945285709%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#-945285709%2FFunctions%2F2098094570"><span><span>idle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-945285709%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-gamepad-op-mode/index.html#-945285709%2FFunctions%2F2098094570"><span class="token function">idle</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1617228809%2FFunctions%2F2098094570" anchor-label="init" id="-1617228809%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#-1617228809%2FFunctions%2F2098094570"><span><span>init</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1617228809%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-gamepad-op-mode/index.html#-1617228809%2FFunctions%2F2098094570"><span class="token function">init</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-493667936%2FFunctions%2F2098094570" anchor-label="init_loop" id="-493667936%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#-493667936%2FFunctions%2F2098094570"><span><span>init_loop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-493667936%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-gamepad-op-mode/index.html#-493667936%2FFunctions%2F2098094570"><span class="token function">init_loop</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="832637297%2FFunctions%2F2098094570" anchor-label="internalPostInitLoop" id="832637297%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#832637297%2FFunctions%2F2098094570"><span>internal</span><wbr><span>Post</span><wbr><span>Init</span><wbr><span><span>Loop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="832637297%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-gamepad-op-mode/index.html#832637297%2FFunctions%2F2098094570"><span class="token function">internalPostInitLoop</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-180688735%2FFunctions%2F2098094570" anchor-label="internalPostLoop" id="-180688735%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#-180688735%2FFunctions%2F2098094570"><span>internal</span><wbr><span>Post</span><wbr><span><span>Loop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-180688735%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-gamepad-op-mode/index.html#-180688735%2FFunctions%2F2098094570"><span class="token function">internalPostLoop</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="958221314%2FFunctions%2F2098094570" anchor-label="internalPreInit" id="958221314%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#958221314%2FFunctions%2F2098094570"><span>internal</span><wbr><span>Pre</span><wbr><span><span>Init</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="958221314%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-gamepad-op-mode/index.html#958221314%2FFunctions%2F2098094570"><span class="token function">internalPreInit</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="949931346%2FFunctions%2F2098094570" anchor-label="internalUpdateTelemetryNow" id="949931346%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#949931346%2FFunctions%2F2098094570"><span>internal</span><wbr><span>Update</span><wbr><span>Telemetry</span><wbr><span><span>Now</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="949931346%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-gamepad-op-mode/index.html#949931346%2FFunctions%2F2098094570"><span class="token function">internalUpdateTelemetryNow</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">telemetry<span class="token operator">: </span><span data-unresolved-link="com.qualcomm.robotcore.robocol/TelemetryMessage///PointingToDeclaration/">TelemetryMessage</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="157279217%2FFunctions%2F2098094570" anchor-label="isStopRequested" id="157279217%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#157279217%2FFunctions%2F2098094570"><span>is</span><wbr><span>Stop</span><wbr><span><span>Requested</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="157279217%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-gamepad-op-mode/index.html#157279217%2FFunctions%2F2098094570"><span class="token function">isStopRequested</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1557977315%2FFunctions%2F2098094570" anchor-label="loop" id="1557977315%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#1557977315%2FFunctions%2F2098094570"><span><span>loop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1557977315%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-gamepad-op-mode/index.html#1557977315%2FFunctions%2F2098094570"><span class="token function">loop</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1616664361%2FFunctions%2F2098094570" anchor-label="main" id="-1616664361%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="main.html"><span><span>main</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1616664361%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="main.html"><span class="token function">main</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2031891859%2FFunctions%2F2098094570" anchor-label="mainLoop" id="2031891859%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="main-loop.html"><span>main</span><wbr><span><span>Loop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2031891859%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="main-loop.html"><span class="token function">mainLoop</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-747396498%2FFunctions%2F2098094570" anchor-label="onEnd" id="-747396498%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-end.html"><span>on</span><wbr><span><span>End</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-747396498%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-end.html"><span class="token function">onEnd</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1106638079%2FFunctions%2F2098094570" anchor-label="onInit" id="-1106638079%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-init.html"><span>on</span><wbr><span><span>Init</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1106638079%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-init.html"><span class="token function">onInit</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1015161614%2FFunctions%2F2098094570" anchor-label="opModeInInit" id="1015161614%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#1015161614%2FFunctions%2F2098094570"><span>op</span><wbr><span>Mode</span><wbr><span>In</span><wbr><span><span>Init</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1015161614%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-gamepad-op-mode/index.html#1015161614%2FFunctions%2F2098094570"><span class="token function">opModeInInit</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-911330061%2FFunctions%2F2098094570" anchor-label="opModeIsActive" id="-911330061%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#-911330061%2FFunctions%2F2098094570"><span>op</span><wbr><span>Mode</span><wbr><span>Is</span><wbr><span><span>Active</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-911330061%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-gamepad-op-mode/index.html#-911330061%2FFunctions%2F2098094570"><span class="token function">opModeIsActive</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-765560122%2FFunctions%2F2098094570" anchor-label="requestOpModeStop" id="-765560122%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#-765560122%2FFunctions%2F2098094570"><span>request</span><wbr><span>Op</span><wbr><span>Mode</span><wbr><span><span>Stop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-765560122%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-gamepad-op-mode/index.html#-765560122%2FFunctions%2F2098094570"><span class="token function">requestOpModeStop</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1757147609%2FFunctions%2F2098094570" anchor-label="resetRuntime" id="1757147609%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#1757147609%2FFunctions%2F2098094570"><span>reset</span><wbr><span><span>Runtime</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1757147609%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-gamepad-op-mode/index.html#1757147609%2FFunctions%2F2098094570"><span class="token function">resetRuntime</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="16555067%2FFunctions%2F2098094570" anchor-label="runOpMode" id="16555067%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="run-op-mode.html"><span>run</span><wbr><span>Op</span><wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="16555067%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="run-op-mode.html"><span class="token function">runOpMode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1872548672%2FFunctions%2F2098094570" anchor-label="sleep" id="1872548672%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#1872548672%2FFunctions%2F2098094570"><span><span>sleep</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1872548672%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-gamepad-op-mode/index.html#1872548672%2FFunctions%2F2098094570"><span class="token function">sleep</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">milliseconds<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1200709743%2FFunctions%2F2098094570" anchor-label="start" id="-1200709743%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#-1200709743%2FFunctions%2F2098094570"><span><span>start</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1200709743%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-gamepad-op-mode/index.html#-1200709743%2FFunctions%2F2098094570"><span class="token function">start</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="841039173%2FFunctions%2F2098094570" anchor-label="stop" id="841039173%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#841039173%2FFunctions%2F2098094570"><span><span>stop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="841039173%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-gamepad-op-mode/index.html#841039173%2FFunctions%2F2098094570"><span class="token function">stop</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-167858447%2FFunctions%2F2098094570" anchor-label="terminateOpModeNow" id="-167858447%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#-167858447%2FFunctions%2F2098094570"><span>terminate</span><wbr><span>Op</span><wbr><span>Mode</span><wbr><span><span>Now</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-167858447%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-gamepad-op-mode/index.html#-167858447%2FFunctions%2F2098094570"><span class="token function">terminateOpModeNow</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1080474565%2FFunctions%2F2098094570" anchor-label="updateTelemetry" id="1080474565%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#1080474565%2FFunctions%2F2098094570"><span>update</span><wbr><span><span>Telemetry</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1080474565%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-gamepad-op-mode/index.html#1080474565%2FFunctions%2F2098094570"><span class="token function">updateTelemetry</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">telemetry<span class="token operator">: </span><span data-unresolved-link="org.firstinspires.ftc.robotcore.external/Telemetry///PointingToDeclaration/">Telemetry</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="246695705%2FFunctions%2F2098094570" anchor-label="waitForStart" id="246695705%2FFunctions%2F2098094570" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":CuttlefishFTCBridge:dokkaHtmlPartial/release" data-filterable-set=":CuttlefishFTCBridge:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-gamepad-op-mode/index.html#246695705%2FFunctions%2F2098094570"><span>wait</span><wbr><span>For</span><wbr><span><span>Start</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="246695705%2FFunctions%2F2098094570"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":CuttlefishFTCBridge:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-gamepad-op-mode/index.html#246695705%2FFunctions%2F2098094570"><span class="token function">waitForStart</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

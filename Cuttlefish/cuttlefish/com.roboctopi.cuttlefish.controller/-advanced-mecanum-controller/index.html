@@ -1,0 +1,558 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>AdvancedMecanumController</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            Cuttlefish Documentation
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":cuttlefish:dokkaHtmlPartial/main">Cuttlefish</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="Cuttlefish::com.roboctopi.cuttlefish.controller/AdvancedMecanumController///PointingToDeclaration//-1477358253">
+  <div class="breadcrumbs"><a href="../../index.html">Cuttlefish</a><span class="delimiter">/</span><a href="../index.html">com.roboctopi.cuttlefish.controller</a><span class="delimiter">/</span><span class="current">AdvancedMecanumController</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Advanced</span><wbr><span>Mecanum</span><wbr><span><span>Controller</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">AdvancedMecanumController</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>rf_motor<span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.components/-motor/index.html">Motor</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>rb_motor<span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.components/-motor/index.html">Motor</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>lf_motor<span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.components/-motor/index.html">Motor</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>lb_motor<span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.components/-motor/index.html">Motor</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>localizer<span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.localizer/-localizer/index.html">Localizer</a></span></span><span class="token punctuation">)</span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1265482019%2FConstructors%2F-1477358253" anchor-label="AdvancedMecanumController" id="1265482019%2FConstructors%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-advanced-mecanum-controller.html"><span>Advanced</span><wbr><span>Mecanum</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1265482019%2FConstructors%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">rf_motor<span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.components/-motor/index.html">Motor</a><span class="token punctuation">, </span></span><span class="parameter ">rb_motor<span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.components/-motor/index.html">Motor</a><span class="token punctuation">, </span></span><span class="parameter ">lf_motor<span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.components/-motor/index.html">Motor</a><span class="token punctuation">, </span></span><span class="parameter ">lb_motor<span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.components/-motor/index.html">Motor</a><span class="token punctuation">, </span></span><span class="parameter ">localizer<span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.localizer/-localizer/index.html">Localizer</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1749240403%2FProperties%2F-1477358253" anchor-label="force" id="-1749240403%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="force.html"><span><span>force</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1749240403%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="force.html">force</a><span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.utils/-pose/index.html">Pose</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="416323702%2FProperties%2F-1477358253" anchor-label="lb_motor" id="416323702%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="lb_motor.html"><span><span>lb_motor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="416323702%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="lb_motor.html">lb_motor</a><span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.components/-motor/index.html">Motor</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="320628305%2FProperties%2F-1477358253" anchor-label="lb_wheel_friction" id="320628305%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="lb_wheel_friction.html"><span><span>lb_wheel_friction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="320628305%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="lb_wheel_friction.html">lb_wheel_friction</a><span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.utils/-pose/index.html">Pose</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="965842930%2FProperties%2F-1477358253" anchor-label="lf_motor" id="965842930%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="lf_motor.html"><span><span>lf_motor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="965842930%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="lf_motor.html">lf_motor</a><span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.components/-motor/index.html">Motor</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1167921749%2FProperties%2F-1477358253" anchor-label="lf_wheel_friction" id="1167921749%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="lf_wheel_friction.html"><span><span>lf_wheel_friction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1167921749%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="lf_wheel_friction.html">lf_wheel_friction</a><span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.utils/-pose/index.html">Pose</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1913055921%2FProperties%2F-1477358253" anchor-label="localizer" id="-1913055921%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="localizer.html"><span><span>localizer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1913055921%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="localizer.html">localizer</a><span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.localizer/-localizer/index.html">Localizer</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-837812632%2FProperties%2F-1477358253" anchor-label="max_force" id="-837812632%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="max_force.html"><span><span>max_force</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-837812632%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="max_force.html">max_force</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2071986328%2FProperties%2F-1477358253" anchor-label="motorRPM" id="-2071986328%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="motor-r-p-m.html"><span>motor</span><wbr><span><span>RPM</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2071986328%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="motor-r-p-m.html">motorRPM</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-131057671%2FProperties%2F-1477358253" anchor-label="motorTorque" id="-131057671%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="motor-torque.html"><span>motor</span><wbr><span><span>Torque</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-131057671%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="motor-torque.html">motorTorque</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="199164028%2FProperties%2F-1477358253" anchor-label="rb_motor" id="199164028%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rb_motor.html"><span><span>rb_motor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="199164028%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="rb_motor.html">rb_motor</a><span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.components/-motor/index.html">Motor</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1065067787%2FProperties%2F-1477358253" anchor-label="rb_wheel_friction" id="1065067787%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rb_wheel_friction.html"><span><span>rb_wheel_friction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1065067787%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="rb_wheel_friction.html">rb_wheel_friction</a><span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.utils/-pose/index.html">Pose</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="748683256%2FProperties%2F-1477358253" anchor-label="rf_motor" id="748683256%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rf_motor.html"><span><span>rf_motor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="748683256%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="rf_motor.html">rf_motor</a><span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.components/-motor/index.html">Motor</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1912361231%2FProperties%2F-1477358253" anchor-label="rf_wheel_friction" id="1912361231%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rf_wheel_friction.html"><span><span>rf_wheel_friction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1912361231%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="rf_wheel_friction.html">rf_wheel_friction</a><span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.utils/-pose/index.html">Pose</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2107280669%2FProperties%2F-1477358253" anchor-label="rotational_positioning_gain" id="2107280669%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rotational_positioning_gain.html"><span><span>rotational_positioning_gain</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2107280669%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="rotational_positioning_gain.html">rotational_positioning_gain</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="815322851%2FProperties%2F-1477358253" anchor-label="rotational_velocity_offset" id="815322851%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rotational_velocity_offset.html"><span><span>rotational_velocity_offset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="815322851%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="rotational_velocity_offset.html">rotational_velocity_offset</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2142471018%2FProperties%2F-1477358253" anchor-label="rVelocityGain" id="2142471018%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="r-velocity-gain.html"><span>r</span><wbr><span>Velocity</span><wbr><span><span>Gain</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2142471018%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="r-velocity-gain.html">rVelocityGain</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1499145272%2FProperties%2F-1477358253" anchor-label="target_radius" id="1499145272%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="target_radius.html"><span><span>target_radius</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1499145272%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="target_radius.html">target_radius</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="247534118%2FProperties%2F-1477358253" anchor-label="target_rotation_err" id="247534118%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="target_rotation_err.html"><span><span>target_rotation_err</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="247534118%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="target_rotation_err.html">target_rotation_err</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-460306289%2FProperties%2F-1477358253" anchor-label="translation_positioning_gain" id="-460306289%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="translation_positioning_gain.html"><span><span>translation_positioning_gain</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-460306289%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="translation_positioning_gain.html">translation_positioning_gain</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="455402801%2FProperties%2F-1477358253" anchor-label="translation_velocity_offset" id="455402801%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="translation_velocity_offset.html"><span><span>translation_velocity_offset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="455402801%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="translation_velocity_offset.html">translation_velocity_offset</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-653946266%2FProperties%2F-1477358253" anchor-label="velocityGain" id="-653946266%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="velocity-gain.html"><span>velocity</span><wbr><span><span>Gain</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-653946266%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="velocity-gain.html">velocityGain</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1114177020%2FProperties%2F-1477358253" anchor-label="wheel_friction" id="-1114177020%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="wheel_friction.html"><span><span>wheel_friction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1114177020%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="wheel_friction.html">wheel_friction</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-460184660%2FProperties%2F-1477358253" anchor-label="wheel_radius" id="-460184660%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="wheel_radius.html"><span><span>wheel_radius</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-460184660%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="wheel_radius.html">wheel_radius</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1352999024%2FProperties%2F-1477358253" anchor-label="wheelXDistance" id="1352999024%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="wheel-x-distance.html"><span>wheel</span><wbr><span><span>XDistance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1352999024%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="wheel-x-distance.html">wheelXDistance</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1916476273%2FProperties%2F-1477358253" anchor-label="wheelYDistance" id="-1916476273%2FProperties%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="wheel-y-distance.html"><span>wheel</span><wbr><span><span>YDistance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1916476273%2FProperties%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="wheel-y-distance.html">wheelYDistance</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1615804705%2FFunctions%2F-1477358253" anchor-label="calculateFriction" id="-1615804705%2FFunctions%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="calculate-friction.html"><span>calculate</span><wbr><span><span>Friction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1615804705%2FFunctions%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="calculate-friction.html"><span class="token function">calculateFriction</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">velocity<span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.utils/-pose/index.html">Pose</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.utils/-pose/index.html">Pose</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1040398173%2FFunctions%2F-1477358253" anchor-label="follow_line" id="-1040398173%2FFunctions%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="follow_line.html"><span><span>follow_line</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1040398173%2FFunctions%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="follow_line.html"><span class="token function">follow_line</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">start<span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.utils/-pose/index.html">Pose</a><span class="token punctuation">, </span></span><span class="parameter ">end<span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.utils/-pose/index.html">Pose</a><span class="token punctuation">, </span></span><span class="parameter ">speed<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">voltage<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1598185995%2FFunctions%2F-1477358253" anchor-label="goTowardsGoal" id="1598185995%2FFunctions%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="go-towards-goal.html"><span>go</span><wbr><span>Towards</span><wbr><span><span>Goal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1598185995%2FFunctions%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="go-towards-goal.html"><span class="token function">goTowardsGoal</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">goal<span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.utils/-pose/index.html">Pose</a><span class="token punctuation">, </span></span><span class="parameter ">voltage<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-679448977%2FFunctions%2F-1477358253" anchor-label="setForceVec" id="-679448977%2FFunctions%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-force-vec.html"><span>set</span><wbr><span>Force</span><wbr><span><span>Vec</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-679448977%2FFunctions%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-force-vec.html"><span class="token function">setForceVec</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">vec<span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.utils/-pose/index.html">Pose</a><span class="token punctuation">, </span></span><span class="parameter ">voltage<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1303642531%2FFunctions%2F-1477358253" anchor-label="setVelocity" id="1303642531%2FFunctions%2F-1477358253" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":cuttlefish:dokkaHtmlPartial/main" data-filterable-set=":cuttlefish:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-velocity.html"><span>set</span><wbr><span><span>Velocity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1303642531%2FFunctions%2F-1477358253"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":cuttlefish:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-velocity.html"><span class="token function">setVelocity</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">velocity<span class="token operator">: </span><a href="../../com.roboctopi.cuttlefish.utils/-pose/index.html">Pose</a><span class="token punctuation">, </span></span><span class="parameter ">voltage<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
